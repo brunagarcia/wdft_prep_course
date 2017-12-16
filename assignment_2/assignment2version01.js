@@ -2,8 +2,8 @@
 var counter = 1;
 var hash = "#"
 
-while (counter <7){
-    str.repeat(2);
+while (counter <8){
+    console.log(hash.repeat(counter));
     counter += 1;
 }
 
