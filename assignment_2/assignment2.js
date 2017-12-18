@@ -20,15 +20,25 @@ the loop.
 
 */
 
-
-
-
-
 // Exercise #2
 // Write your solution below
 
+function isEven(number){
+    if (number % 2 == 0){
+        console.log(number + " is even!")
+    }else{
+        console.log(number + " is odd!")
+    };
+
+}
+
+isEven(7);
 
 /* 
 Write your explanation for Exercise #2 here
+
+For this function I thought about how would I determine that a number would be even or odd, so I knew it that if
+a number is even divided by 2 the result should be a integer and the result would be 0, then I applied that to the
+if statement with the conditions being the console log, printing the numbers and if they are odd or even.
 
 */
