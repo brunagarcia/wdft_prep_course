@@ -1,4 +1,192 @@
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
 
+ html {
+    line-height: 1.15; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers (opinionated).
+   */
+  
+  
+  /**
+   * Add the correct display in IE 9-.
+   */
+  
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 9-.
+   * 1. Add the correct display in IE.
+   */
+  
+  figcaption,
+  figure,
+  main { /* 1 */
+    display: block;
+  }
+  
+  /**
+   * Add the correct margin in IE 8.
+   */
+  
+  figure {
+    margin: 1em 40px;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * 1. Remove the gray background on active links in IE 10.
+   * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+   */
+  
+  a {
+    background-color: transparent; /* 1 */
+    -webkit-text-decoration-skip: objects; /* 2 */
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+   */
+  
+  b,
+  strong {
+    font-weight: inherit;
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font style in Android 4.3-.
+   */
+  
+  dfn {
+    font-style: italic;
+  }
+  
+  /**
+   * Add the correct background and color in IE 9-.
+   */
+  
+  mark {
+    background-color: #ff0;
+    color: #000;
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
   /**
    * Add the correct display in IE 9-.
    */
@@ -253,14 +441,19 @@
   /* Bruna's Design*/
 html{
 	width: 100%;
-	height: 100%;
 }
 
 body{
-	width: 100%;
+  color: rgb(44, 44, 44);
+  width: 100%;
 	height: auto;
-    background-color: rgb(248, 248, 248);
-    font-family: Arial, Helvetica, sans-serif;    
+  background-color: rgb(248, 248, 248);
+  font-family: Arial, Helvetica, sans-serif;    
+}
+
+p, h4{
+  margin: 2px;
+  color: rgb(44, 44, 44);
 }
 
 nav{
@@ -275,290 +468,91 @@ nav{
     position: fixed;
 }
 
-main{
+nav a{
+  color:white;
+  text-decoration: none;
+}
+
+nav a:hover{
+  padding: 5px;
+  border-radius: 1px;
+  background-color: rgb(64, 64, 65);
+  text-decoration: underline;
+}
+
+nav #nameTitle{
     position: fixed;
-    right:0%;
-    height: 100%;
-    width: 80%;
-    
+    top: 25%;
+    margin: 1%;
 }
 
-
-
-
-li{
-	width: 80%;
-	vertical-align: baseline;
-	margin: 10% 10% 2%;
-	color: black;	
-}
-
-a{
-	color: white;
-	display: block;
-    font-family: helvetica;
-	font-size: 20px;
-	margin: 5px;
-    text-align: center;
-    list-style: none;
-    text-decoration: none;
-	transition: all 1.0 ease;
-	}
-
-a:hover{
-	color: #4198b9; 
-	text-decoration: underline;
-	letter-spacing: 2px;
-}
-
-a:active{
-	border-radius: 10px;
-    background-color: #c394a9;
-    color: black;
-}
-
-
-h1,h2{
-    text-align: center;
-    margin:auto;
-    padding: 2%;
-}
-
-h2{
-	font-size: 20px;
-}
-
-p{ 
-    text-align: center;
-	margin: 2%;
-    padding: 2%;
-}
-
-/* CLASS */
-.generate{
-    counter-reset: cnt;
-    position:relative;
-    text-align:center;
-    padding:20px 0;
-    width:420px;
-    height: 160px;
-    margin: 0 auto;
-}
-.generate::before{
-    display: block;
-    content:'Hover over these items:';
-    font-size:18px;
-    font-weight:bold;
-    text-align:center;
-    padding:15px;
-}
-
-.generate span{
-    display:inline-block;
-    padding:2px 6px;
-    background-color:#c394a9;
-    color:black;
-    border-radius:4px;
-    margin:2px;
-    cursor:default;
-}
-
-.generate span:hover{
-	background-color: cornflowerblue;
-}
-
-.generate span::after{
-    counter-increment: cnt;
-    content:" #" counter(cnt);
-    display:inline-block;
-    padding:2px;
-}
-
-.generate span::before{
-    position:absolute;
-    bottom:0;
-    left:0;
-    width:100%;
-    content:attr(data-title);
-    color:black;
-
-    opacity:0;
-
-    /* transitions */
-    -webkit-transition:opacity 0.7s;
-    transition:opacity 0.7s;
-}
-
-.generate span:hover::before{
-	opacity:1;
-}
-
-.fade{
-	box-sizing: border-box;
-	border-radius: 10px;
-	margin: auto;
-	padding:2%;
-	background: rgba(77, 98, 109, 0.5);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	width: 65px;
-	height: auto;
-	transition: all 0.5s ease;
-}
-.fade:hover{
-	background:rgba(195,148,169,1.0);
-}
-
-
-
-/* ID */
-
-#logo{
-    padding: 1%;
-	width: 12%;
-	height: auto;
-    margin-left: 5%;
-	
-    
-}
-
-/*
-#icons{
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 75%;
-}
-*/
-
-/*
-#twt{
-    width: 40%;
-    height: auto;
-    background: url(../images/spriteicon.png) 0px 0px;
-    position: absolute;
-    top: 90%;
-    left:2%;
-    flex-shrink: 20%;
-    
-    
-}
-
-#fbk{
-    width: 40%;
-    height: auto;
-    background: url(../images/spriteicon.png) -75px 0px;
-    position: absolute;
-    top: 90%;
-    left:38%;
-    flex-shrink: 20%;
-}
-    
-#inst{
-    width: 40%;
-    height: auto;
-    background: url(../images/spriteicon.png) -150px 0px;
-    position: absolute;
-    top: 90%;
-    left: 73%;
-    flex-shrink: 20%;
-}
-*/
-/* Media Queries*/
-
-@media print{
-	body{background-color:white}
-	body, main, article{ 
-				width: auto;
-				padding:0px;
-				margin: auto;
-							
-	}
-	nav, .generate{display:none}
-	a:link:after, 
-	a:visited:after{
-	   content: " (URL: " attr(href) ") ";
-		font-size: 90%;}
-	
-}
-
-@media only screen and (max-width:920px) and (min-width:0px){
-	header{
-		display: block;
-		position: absolute;
-		width: 90%;
-		top:0;
-		left:15px;
-	}
-	nav{
-		display: block;
-		position: relative;
-		padding: 2px;
-		border-radius: 3px;
-		top: 80px;
-		left:15px;
-		width: 90%;
-		height: 10%
-	}
-		
-	main{
-		display: block;
-		position: relative;
-		margin:20% 0% 0% 3% ;
-		width: 90%;
-		top:5px;
-		right:15;
-	}
-	
-	.nav {
-		margin: 1px 1px 1px 1px;
-		padding: 0;
-		width: auto;
-		height: auto;
-		background-color: #4198b9;
-		box-shadow: 0px 0px 0px white;
-		border-radius: 0px;
-	}
-	
-	.nav a{
-		padding: 0;
-		margin: 0;
-		display: inline;
-		font-size: 15px;
-		background-color: none;
-		
-	}
-
-
-
-
-
-
-  /* ID'S */
-
-
-#contact{
-    color: white;
-    text-decoration: none;
-}
-#contact:hover{
-    color: rgb(127, 185, 236);
-    text-decoration: underline;
-}
-
-#info h3{
-    margin: 2px;
-
-}
-/* Box for second part of info -- right */
-#info2 h3{
-    margin: 2px;
-
-}
-
-#navul{
-    margin: 2px 2px 2px 2px ;
-    padding: 0;
-    display: inline;
+nav #info{
+    position: fixed;
+    top:35%;
+    width: 20%;
+    height: 60%;
+    margin: 1%;
     align-self: center;
+    font-size: 90%
+
+}
+
+main{
+    position: absolute;
+    left:25%;
+    height: auto;
+    width: 70%;
+    padding: 2px;    
+}
+#skills{
+    float: right;
+    position: relative;
+    right: 0%;
+    top: 0%;
+    height: 25%;
+    width: 100%;
+    border-bottom-style: dashed;
+    border-bottom-color: #c5c5c5;
+
+}
+
+h3 > #skills{
+    align-content: center;
+    width: 100%;
+    height: 20%;
+    padding: 1px;
+}
+
+#skills01{
+    float: left;
+
+    left:5%;
+}
+
+#skills02{
+    float: left;
+    position: relative;
+    left:25%;
+}
+
+#skills03{
+    float: left;
+    position: relative;
+    left:50%;
+}
+
+#experience{
+    float: left;
+    margin: 0 1.5%;
+    width: 45%;
+    border-right-style: dashed;
+    border-right-color: #c5c5c5;
+    font-size: 14px;
+}
+
+#education{
+  float: right;
+  margin: 0 1.5%;
+  width: 45%;
+  font-size: 14px;
 }
