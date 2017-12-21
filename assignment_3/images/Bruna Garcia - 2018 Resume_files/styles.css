@@ -505,12 +505,8 @@ main{
     height: auto;
     width: 70%;
     padding: 2px;    
-    color: grey
 }
-
-
 #skills{
-    color: rgb(46, 46, 46);
     float: right;
     position: relative;
     right: 0%;
