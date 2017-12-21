@@ -1,4 +1,5 @@
-/**
+ 
+/* 
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
@@ -436,7 +437,8 @@
   
   [hidden] {
     display: none;
-  }
+  } 
+  */
 
   /* Bruna's Design*/
 html{

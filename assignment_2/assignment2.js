@@ -1,4 +1,4 @@
-// Exercise #1 - Bruna Garcia
+// Exercise #1
 // Write your solution below
 
 //array to keep values.
